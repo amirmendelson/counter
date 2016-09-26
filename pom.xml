@@ -4,7 +4,7 @@
 	<artifactId>Counter</artifactId>
 	<packaging>war</packaging>
 	
-	<version>1.1.10</version>  
+	<version>1.1.11-snapshot</version>  
   	
 	<name>Counter app</name>
 	<url>http://maven.apache.org</url>
@@ -106,8 +106,7 @@
     		<url>scm:git:git@github.com:amirmendelson/counter.git</url>
 			<connection>scm:git:git@github.com:amirmendelson/counter.git</connection>
 			<developerConnection>scm:git:git@github.com:amirmendelson/counter.git</developerConnection>
-		  <tag>Counter-1.1.10</tag>
-  </scm>	
+		</scm>	
 
 	
 <!--	
