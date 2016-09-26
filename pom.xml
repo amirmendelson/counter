@@ -1,12 +1,12 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.amd</groupId>
-	<artifactId>CounterWebApp</artifactId>
+	<artifactId>Counter</artifactId>
 	<packaging>war</packaging>
 	
-	<version>1.1.2-snapshot</version>
+	<version>1.1.10</version>  
   	
-	<name>CounterWebApp Maven Webapp</name>
+	<name>Counter app</name>
 	<url>http://maven.apache.org</url>
 	<properties>
 		<jdk.version>1.7</jdk.version>
@@ -93,19 +93,51 @@
 		</dependency>
 	</dependencies>
 
+	<!--
+		<scm>
+		<url>https://github.com/kevinsawicki/github-maven-example</url>
+		<connection>scm:git:git://github.com/kevinsawicki/github-maven-example.git</connection>
+		<developerConnection>scm:git:git@github.com:kevinsawicki/github-maven-example.git</developerConnection>
+	</scm>
+	--> 
 	
+	    <scm>
+    		<!-- <url>https://github.com/amirmendelson/Counter</url> -->
+    		<url>scm:git:git@github.com:amirmendelson/counter.git</url>
+			<connection>scm:git:git@github.com:amirmendelson/counter.git</connection>
+			<developerConnection>scm:git:git@github.com:amirmendelson/counter.git</developerConnection>
+		  <tag>Counter-1.1.10</tag>
+  </scm>	
+
+	
+<!--	
     <scm>
-		<url>scm:git:git@github.com:amirmendelson/Counter.git</url>
-		<connection>scm:git:git@github.com:amirmendelson/Counter.git</connection>
+		<url>https://github.com/amirmendelson/Counter</url>
+		<connection>scm:git:git://github.com/amirmendelson/Counter.git</connection>
 		<developerConnection>scm:git:git@github.com:amirmendelson/Counter.git</developerConnection>
     </scm>    
-	
+-->	
 	
 	<build>
-		<finalName>CounterWebApp</finalName>
+		<finalName>Counter</finalName>
  
 
 		<plugins>
+		    <!-- 
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-release-plugin</artifactId>
+				<version>2.2.2</version>
+				<dependencies>
+					<dependency>
+						<groupId>org.apache.maven.plugins</groupId>
+						<artifactId>maven-scm-plugin</artifactId>
+						<version>1.8.1</version>
+					</dependency>
+				</dependencies>
+			</plugin>		
+		    -->
+		
 			<plugin>
 				<groupId>org.apache.tomcat.maven</groupId>
 				<artifactId>tomcat7-maven-plugin</artifactId>
@@ -113,7 +145,7 @@
 				<configuration>
 					<url>http://plt1_tomcat.mooo.com:8080/manager/text</url>
 					<server>TomcatServer</server>
-					<path>/CounterWebApp</path> 
+					<path>/Counter</path> 
 <!-- 					<username>tomcat</username>
 					<password>tomcat</password> -->					
 				</configuration>
@@ -143,6 +175,9 @@
 					<target>${jdk.version}</target>
 				</configuration>
 			</plugin>
+			
+			
+			
 		</plugins>
 	</build>
 </project>
