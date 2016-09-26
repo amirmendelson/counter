@@ -4,10 +4,47 @@
 	<artifactId>Counter</artifactId>
 	<packaging>war</packaging>
 	
-	<version>1.1.11-snapshot</version>  
+	<version>1.1.19-snapshot</version>  
   	
 	<name>Counter app</name>
 	<url>http://maven.apache.org</url>
+
+	    <scm>
+    	
+             <url>https://github.com/amirmendelson/counter.git</url>
+		<!-- <url>https://github.com/amirmendelson/Counter</url> 
+    		<url>scm:git:git@github.com:amirmendelson/counter.git</url> 
+			<connection>scm:git:git://github.com/amirmendelson/counter.git</connection>
+		-->	
+			<connection>scm:git:ssh://git@github.com/amirmendelson/counter.git</connection>
+		    <developerConnection>scm:git:ssh://git@github.com/amirmendelson/counter.git</developerConnection> 
+		</scm>	
+		
+		
+	
+	
+	<!--
+		<scm>
+		<url>https://github.com/kevinsawicki/github-maven-example</url>
+		<connection>scm:git:git://github.com/kevinsawicki/github-maven-example.git</connection>
+		<developerConnection>scm:git:git@github.com:kevinsawicki/github-maven-example.git</developerConnection>
+	</scm>
+	--> 
+	
+
+	
+<!--	
+    <scm>
+		<url>https://github.com/amirmendelson/Counter</url>
+		<connection>scm:git:git://github.com/amirmendelson/Counter.git</connection>
+		<developerConnection>scm:git:git@github.com:amirmendelson/Counter.git</developerConnection>
+    </scm>    
+-->	
+	
+	
+	
+	
+	
 	<properties>
 		<jdk.version>1.7</jdk.version>
 		<spring.version>4.1.1.RELEASE</spring.version>
@@ -16,6 +53,10 @@
 		<logback.version>1.0.13</logback.version>
 		<jcl-over-slf4j.version>1.7.5</jcl-over-slf4j.version>
 	</properties>
+
+
+
+
 	<distributionManagement>
 	  <repository>
 	     <id>deployment</id>
@@ -93,29 +134,6 @@
 		</dependency>
 	</dependencies>
 
-	<!--
-		<scm>
-		<url>https://github.com/kevinsawicki/github-maven-example</url>
-		<connection>scm:git:git://github.com/kevinsawicki/github-maven-example.git</connection>
-		<developerConnection>scm:git:git@github.com:kevinsawicki/github-maven-example.git</developerConnection>
-	</scm>
-	--> 
-	
-	    <scm>
-    		<!-- <url>https://github.com/amirmendelson/Counter</url> -->
-    		<url>scm:git:git@github.com:amirmendelson/counter.git</url>
-			<connection>scm:git:git@github.com:amirmendelson/counter.git</connection>
-			<developerConnection>scm:git:git@github.com:amirmendelson/counter.git</developerConnection>
-		</scm>	
-
-	
-<!--	
-    <scm>
-		<url>https://github.com/amirmendelson/Counter</url>
-		<connection>scm:git:git://github.com/amirmendelson/Counter.git</connection>
-		<developerConnection>scm:git:git@github.com:amirmendelson/Counter.git</developerConnection>
-    </scm>    
--->	
 	
 	<build>
 		<finalName>Counter</finalName>
