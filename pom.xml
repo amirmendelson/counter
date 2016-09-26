@@ -10,40 +10,11 @@
 	<url>http://maven.apache.org</url>
 
 	    <scm>
-    	
-             <url>https://github.com/amirmendelson/counter.git</url>
-		<!-- <url>https://github.com/amirmendelson/Counter</url> 
-    		<url>scm:git:git@github.com:amirmendelson/counter.git</url> 
-			<connection>scm:git:git://github.com/amirmendelson/counter.git</connection>
-		-->	
+            <url>https://github.com/amirmendelson/counter.git</url>
 		    <connection>scm:git:https://github.com/amirmendelson/counter.git</connection>
 		    <developerConnection>scm:git:https://github.com/amirmendelson/counter.git</developerConnection> 
-          
-    <tag>HEAD</tag>
-  </scm>	
-		
-		
-	<!--
-		<scm>
-		<url>https://github.com/kevinsawicki/github-maven-example</url>
-		<connection>scm:git:git://github.com/kevinsawicki/github-maven-example.git</connection>
-		<developerConnection>scm:git:git@github.com:kevinsawicki/github-maven-example.git</developerConnection>
-	</scm>
-	--> 
-	
-
-	
-<!--	
-    <scm>
-		<url>https://github.com/amirmendelson/Counter</url>
-		<connection>scm:git:git://github.com/amirmendelson/Counter.git</connection>
-		<developerConnection>scm:git:git@github.com:amirmendelson/Counter.git</developerConnection>
-    </scm>    
--->	
-	
-	
-	
-	
+			<tag>HEAD</tag>
+        </scm>	
 	
 	<properties>
 		<jdk.version>1.7</jdk.version>
