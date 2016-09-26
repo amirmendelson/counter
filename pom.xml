@@ -4,7 +4,7 @@
 	<artifactId>Counter</artifactId>
 	<packaging>war</packaging>
 	
-	<version>1.1.22-SNAPSHOT</version>  
+	<version>1.1.25-SNAPSHOT</version>  
   	
 	<name>Counter app</name>
 	<url>http://maven.apache.org</url>
@@ -16,10 +16,9 @@
     		<url>scm:git:git@github.com:amirmendelson/counter.git</url> 
 			<connection>scm:git:git://github.com/amirmendelson/counter.git</connection>
 		-->	
-			         <connection>scm:git:https://github.com/amirmendelson/counter.git</connection>
+		    <connection>scm:git:https://github.com/amirmendelson/counter.git</connection>
 		    <developerConnection>scm:git:https://github.com/amirmendelson/counter.git</developerConnection> 
-		  <tag>HEAD</tag>
-  </scm>	
+        </scm>	
 		
 		
 	<!--
@@ -63,10 +62,10 @@
          <!--  
 	     <url>http://plt1_Nexus.mooo.com:8081/nexus/content/repositories/releases/</url>
          --> 
-		 <url>http://localhost:8081/repository/maven-releases/</url>
+		 <url>http://localhost:8081/repository/maven-releases/</url> 
 		 
-		 
-		 </repository>
+	  </repository>
+	  
 	  <snapshotRepository>
 	     <id>deployment</id>
 	     <name>Internal Releases</name>
