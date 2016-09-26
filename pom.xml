@@ -4,7 +4,7 @@
 	<artifactId>Counter</artifactId>
 	<packaging>war</packaging>
 	
-	<version>1.1.19-snapshot</version>  
+	<version>1.1.22-SNAPSHOT</version>  
   	
 	<name>Counter app</name>
 	<url>http://maven.apache.org</url>
@@ -16,13 +16,12 @@
     		<url>scm:git:git@github.com:amirmendelson/counter.git</url> 
 			<connection>scm:git:git://github.com/amirmendelson/counter.git</connection>
 		-->	
-			<connection>scm:git:ssh://git@github.com/amirmendelson/counter.git</connection>
-		    <developerConnection>scm:git:ssh://git@github.com/amirmendelson/counter.git</developerConnection> 
-		</scm>	
+			         <connection>scm:git:https://github.com/amirmendelson/counter.git</connection>
+		    <developerConnection>scm:git:https://github.com/amirmendelson/counter.git</developerConnection> 
+		  <tag>HEAD</tag>
+  </scm>	
 		
 		
-	
-	
 	<!--
 		<scm>
 		<url>https://github.com/kevinsawicki/github-maven-example</url>
@@ -64,7 +63,8 @@
          <!--  
 	     <url>http://plt1_Nexus.mooo.com:8081/nexus/content/repositories/releases/</url>
          --> 
-		 <url>http://localhost:8081/nexus/content/repositories/releases/</url>
+		 <url>http://localhost:8081/repository/maven-releases/</url>
+		 
 		 
 		 </repository>
 	  <snapshotRepository>
@@ -72,7 +72,7 @@
 	     <name>Internal Releases</name>
 	     <!--url>http://plt1_Nexus.mooo.com:8081/nexus/content/repositories/snapshots/</url-->
 	     <!-- <url>http://plt1_Nexus.mooo.com:8081/nexus/content/repositories/snapshots/</url> -->	     
-		 <url>http://localhost:8081/nexus/content/repositories/snapshots/</url>
+		 <url>http://localhost:8081/repository/maven-snapshots/</url>
 	  </snapshotRepository>
 	</distributionManagement>
 
@@ -140,20 +140,6 @@
  
 
 		<plugins>
-		    <!-- 
-			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-release-plugin</artifactId>
-				<version>2.2.2</version>
-				<dependencies>
-					<dependency>
-						<groupId>org.apache.maven.plugins</groupId>
-						<artifactId>maven-scm-plugin</artifactId>
-						<version>1.8.1</version>
-					</dependency>
-				</dependencies>
-			</plugin>		
-		    -->
 		
 			<plugin>
 				<groupId>org.apache.tomcat.maven</groupId>
