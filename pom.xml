@@ -113,16 +113,7 @@
 
 		<plugins>
 
-        <plugin>
-          <artifactId>maven-scm-plugin</artifactId>
-          <version>1.8.1</version>
-          <configuration>
-                 <scmVersionType>master</scmVersionType>
-          </configuration>
-        </plugin>		
 		
-		
-
 			<plugin>
 			  <artifactId>maven-release-plugin</artifactId>
 			  <version>2.4.2</version>
